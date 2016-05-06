@@ -1,0 +1,515 @@
+.trans {
+    position:absolute;
+    background: rgba(255,255,255,.7);
+    width:100%;
+    height:20%;
+    margin-top: 1em;
+}
+
+html, body
+{
+  font-family: 'Roboto-light', sans-serif;
+  height:100%;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(60, 60, 60);
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+.logo {
+   width: 17em;
+}
+
+.headers {
+  width: 100%;
+}
+
+.credits {
+  text-align: center;
+}
+
+.cbp-item.print.motion {
+  width: 200px !important;
+  height: 300px;
+}
+
+.cbp-caption-activeWrap {
+  bottom: 0px !important;
+}
+
+.cbp-l-caption-body {
+  margin-top: 7px !important;
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width:auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.f {
+  font-size: 4em;
+  text-transform: uppercase;
+  color: white;
+}
+
+#container-text{
+  height: 100%;
+  background: white;
+}
+
+.textslide {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#continue {
+  font-size: 1.5em;
+  z-index: 20;
+  padding: 7px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  background-color: transparent;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  margin-top: 2em;
+  }
+
+
+#continue:hover,
+#continue:active {
+    background-color: #ffffff;
+    color: #000;
+    transition: background-color 0.3s ease-in,
+                color 0.3s ease-in;
+
+}
+
+.clickhere {
+  font-size: 4em;
+  color: gray;
+  top: 1.5em;
+  text-align: center;
+}
+
+strong {
+font-weight: 900;
+text-transform: uppercase;
+}
+
+#container-about{
+  width: 100%;
+  background: white;
+}
+
+#container-shooting{
+  width: 100%;
+  background: white;
+}
+
+.row {
+  margin: 0px;
+}
+
+.introbg{
+  width:100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+
+.wrapper{
+	float:left; /* important */
+	position:relative; /* important(so we can absolutely position the description div */
+}
+
+.wrapper:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.wrapper:hover:after {
+    opacity:1;
+}
+
+
+.description{
+	position:absolute; /* absolute position (so we can position it where we want)*/
+	bottom:0px; /* position will be on bottom */
+	left:0px;
+	width:100%;
+	font-family: 'tahoma';
+  background-color: black;
+	font-size:15px;
+	color:white;
+	opacity:0.6; /* transparency */
+	filter:alpha(opacity=60); /* IE transparency */
+}
+
+.description_content{
+	padding:10px;
+	margin:0px;
+  font-size: .8em;
+  color: white;
+
+}
+
+td {
+  padding: 1em;
+}
+
+p {
+  font-size: 1.2em;
+  color: gray;
+  margin: 2em 7em 1em 7em;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+.mainbtn {
+  margin-top: 10em;
+}
+
+.selecttwo {
+  font-size: 3em;
+  font-weight: 700;
+  color: rgb(58, 58, 58);
+  margin-top: 3.5em;
+}
+
+.skipvideo {
+  font-size: .7em;
+  float: right;
+  z-index: 20;
+  padding: 12px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  margin-right: 1.5em;
+  border-radius: 2px;
+  background-color: transparent;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.skipvideo:hover,
+.skipvideo:active {
+  background-color: #ffffff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
+
+.video-container{
+  position:relative;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  padding-bottom:50%;
+}
+
+.video-container iframe{
+  position:fixed;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  right:0px;
+  width:100%;
+  height:100%;
+  border:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  z-index:-10;
+
+}
+
+#swipebox-prev, #swipebox-next {
+  display: none;
+}
+
+.vimeo-intro {
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+  color: white;
+}
+
+.container-video {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.navbar-brand {
+  text-transform: uppercase;
+  padding-left: 45px;
+  color: #777;
+  font-weight: 700;
+
+}
+
+.menu-mobile {
+  padding: 0px;
+}
+
+.navbar-nav {
+float: right;
+}
+
+.boxes-top {
+  text-align: center;
+}
+
+.boxes-bottom {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.fsp-close {
+  top: 30px;
+  font-size: 2em;
+  color: rgb(79, 78, 78);
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 2em;
+}
+
+li {
+    display: inline;
+    padding: 0em .5em 0em .5em;
+    text-transform: uppercase;
+}
+
+label {
+display: inline-block;
+width: 100%;
+font-weight: 700;
+height: 150px;
+color: white;
+
+}
+
+.about {
+  border-right: 1px solid gray;
+}
+
+.conversations {
+  border-right: 1px solid gray;
+}
+
+
+
+/*BUTTONS */
+
+
+.ck-button {
+    margin: 4px;
+    background-color: rgba(37, 37, 37, 0.7);
+    border-radius: 7px;
+    height: 50px;
+
+}
+
+.ck-button:hover {
+  background-color: rgba(124, 124, 124, 0.8);
+
+}
+
+.ck-button label {
+    color: white;
+}
+
+.ck-button label span {
+    text-align:center;
+    padding:.5em 0em;
+    display:block;
+    height: 50px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.ck-button label input {
+    display: none;
+}
+
+.ck-button input:checked + span {
+    background-color: rgba(232, 232, 232, 0.8);
+    border-radius: 7px;
+}
+
+.overlay{
+  height: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo {
+ width: 11em;
+}
+
+ul {
+  margin-top: 1em;
+}
+
+.navbar-nav {
+text-align: center;
+float: none;
+}
+
+.navbar-brand {
+padding-left: 20px;
+}
+
+.navbar-toggle {
+margin-right: 30px;
+
+}
+
+.mainbtn {
+margin-top: 1em;
+}
+
+.navbar {
+margin-bottom: 0px;
+}
+
+video {
+  width: auto;
+
+}
+
+.skipvideo {
+  font-size: .4em;
+  float: right;
+  z-index: 20;
+  padding: 12px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  margin-right: 1.5em;
+  border-radius: 5px;
+  background-color: transparent;
+
+}
+
+.boxes-bottom {
+ margin-top: 0px;
+ }
+
+
+.intro-text {
+   position: none;
+   top: 0;
+   transform: none;
+   text-align: center;
+   color: white;
+ }
+
+.intro-text {
+  text-align: center;
+  color: white;
+}
+
+.logo-main {
+  max-width:100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.continue-mobile {
+  font-size: .7em;
+  z-index: 20;
+  padding: 6px;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 2px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.begin-convo {
+  font-size: .7em;
+  z-index: 20;
+  padding: 6px;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 2px;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  text-align: center;
+  color: gray;
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+
+.interim {
+  margin-top: 2em;
+}
+
+.selecttwo {
+  margin-top: .5em;
+  font-size: 2em;
+}
+
+.mainbg {
+  display: none;
+}
+
+ }

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>After the Shooting</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="plugins/cube/cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="plugins/swipebox/src/css/swipebox.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <script src="plugins/swipebox/src/js/jquery.swipebox.js"></script>
+    <script src="http://f.vimeocdn.com/js/froogaloop2.min.js"></script>
+    <script type="text/javascript" src="plugins/cube/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <link rel="stylesheet" href="plugins/popup/dist/magnific-popup.css">
+    <script src="plugins/popup/dist/jquery.magnific-popup.js"></script>
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  </head>
+  <body>
+
+<!-- INTRO -->
+
+      <div id="container-intro" style="display:none;">
+        <div class="row">
+          <div class="hidden-xs col-md-12">
+            <video autoplay poster="images/introvid.jpg" class="introbg" loop>
+              <source src="images/introvid.webm" type="video/webm">
+                <source src="images/introvid.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="row">
+          <div class="hidden-xs intro-text">
+            <h1 class="title"><img src="images/ats2.png"></h1>
+              <h3>A small-town tragedy becomes the world’s conversation<br><br><span style="font-weight: bold;">#chapelhillshooting</span></h3>
+              <button id="continue">Continue</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="container-video" style="display:none;">
+        <div class="row">
+          <div class="hidden-xs col-md-12">
+            <div class="video-container">
+              <iframe id="player1" src="//player.vimeo.com/video/120861219?api=1&player_id=player1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <h1><button class="skipvideo">Skip Video</button></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div id="container-text" style="display:none;">
+      <div class="row textslide">
+        <div class="col-md-12">
+          <h1>After the #chapelhillshooting, a polarized narrative emerged — was this a hate crime or a parking dispute?
+            <br><br>But what if it’s more complicated than that?</h1>
+            <a href="#"><i class="clickhere glyphicon glyphicon-triangle-bottom"></i></a>
+        </div>
+      </div>
+    </div>
+
+<!-- INTRO MOBILE/TABLET -->
+<div id="intro-mobile">
+  <div class="row">
+    <div class="xs-col-12 hidden-sm hidden-md hidden-lg hidden-xl intro-text">
+      <img src="images/ats_mobile.png" class="logo-main" alt="After The Shooting">
+        <h3>A small-town tragedy becomes the world’s conversation<br><br><span style="font-weight: bold;">#chapelhillshooting</span></h3>
+        <iframe id="player1" src="//player.vimeo.com/video/120861219?api=1&player_id=player1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <h1><button class="continue-mobile">Continue</button></h1>
+    </div>
+  </div>
+</div>
+
+<div id="text-mobile" style="display:none;">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="interim">After the #chapelhillshooting, a polarized narrative emerged — was this a hate crime or a parking dispute?
+        <br><br>But what if it’s more complicated than that?</h1>
+        <h1><button class="begin-convo">Begin the Conversation</button></h1>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- MAIN NAV BAR -->
+    <div id="container-nav" style="display:none;">
+      <div class="row">
+        <div class="col-md-12 menu-mobile">
+          <nav id="myNavbar" class="navbar navbar-default" role="navigation">
+            <a href="./" class="navbar-brand"><img src="images/ats_main.png" alt="After the Shooting" class="logo"></a>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="about"><a href=#>About the Project</a></li>
+                <li class="conversations"><a href="#">Conversations</a></li>
+                <li class="shooting"><a href="#">The Shooting</a></li>
+              </ul>
+            </div> <!-- navbar-collapse -->
+          </nav>
+        </div>
+      </div>
+    </div>
+
+
+<!-- MAIN PAGE -->
+    <div id="container-mainpage" style="display:none;">
+      <div class="overlay">
+
+      <video autoplay poster="images/chair.jpg" class="mainbg" loop>
+        <source src="images/chair.webm" type="video/webm">
+        <source src="images/chair.mp4" type="video/mp4">
+      </video>
+
+      <div class="row">
+        <div class="col-md-12">
+            <h1 class="selecttwo">Select two topics below to start the conversation.</h1>
+        </div>
+      </div>
+
+      <div class="row">
+            <form name="formone" id="optionsform" class="mainbtn">
+              <fieldset>
+                <div class="hidden-xs col-md-2"></div>
+                <div class="col-xs-12 col-md-4 boxes-top">
+                  <div class="ck-button">
+                    <label>
+                      <input type="checkbox" name="health" value="0" onClick="return KeepCount()"><span>Mental Health</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-4 boxes-top">
+                  <div class="ck-button">
+                    <label>
+                      <input type="checkbox" name="religion" value="2" onClick="return KeepCount()"><span>Religion</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="hidden-xs col-md-2"></div>
+        </div>
+
+        <div class="row">
+                  <div class="hidden-xs col-md-2"></div>
+                  <div class="col-xs-12 col-md-4 boxes-bottom">
+                    <div class="ck-button">
+                      <label>
+                        <input type="checkbox" name="guns" value="4" onClick="return KeepCount()"><span>Guns</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4 boxes-bottom">
+                    <div class="ck-button">
+                      <label>
+                        <input type="checkbox" name="medias" value="1" onClick="return KeepCount()"><span>Media</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="hidden-xs col-md-2"></div>
+              </fieldset>
+            </form>
+        </div>
+      </div>
+    </div> <!-- CLOSE CONTENT -->
+
+
+
+
+<!-- ABOUT -->
+
+<div id="container-about" style="display:none;">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1"><br><br>
+        <img src="images/aboutproject.png" class="headers">
+        <p>When there is a tragedy in your own town, it’s different – entirely different.
+          <br><br>The execution-style murders of three Muslim students, Deah Barakat, Yusor Abu-Salha and Razan Abu-Salha, were no exception.
+          Immediately, the #chapelhillshooting caught the world’s attention.
+          <br><br>Overnight, the peaceful, idyllic town of Chapel Hill was transformed.
+          No longer could we find comfort behind the walls of our university or cling to our liberal town identity.
+          A dark underbelly had been revealed, and it was largely reflective of American anti-Muslim sentiments.
+          <br><br>By February 11, just one day after the murders, news crews were piling in by the dozens, hundreds of vigils were being
+          planned across the world and hashtags such as #muslimlivesmatter and #ourthreewinners were born.
+          <br><br>The world was mourning.
+          <br><br>Immediately, our community had questions.  We had questions. How did this happen? And why?
+          Yet, the simplified mainstream media narrative was not answering them, and we became frustrated.
+          <br><br>As students, as members of this community and as journalists, we became determined to do something about it
+          and created this project as tool for communication, connection and understanding.
+          We wanted to analyze mainstream coverage, as well as provide an alternative narrative,
+          by curating conversations between professionals in our own community.
+          <br><br>Our hope is that this project will elevate the conversation around this event, and events like it around the country,
+          which unfortunately are happening far too frequently.</p>
+          <br><br><br>
+
+    <img src="images/voices.png" class="headers">
+
+    <br><br><br>
+    <table align="center" style="width:70%">
+      <tr>
+        <td>
+          <a href="#abdullah" class="open-popup-link wrapper">
+            <img src='images/01_Abdullah_Antepli.jpg'>
+              <div class='description'>
+                  <p class='description_content'>Abdullah Antepli<br>Former Duke University Imam</p>
+              </div>
+          </a>
+        </td>
+
+        <div style="display:none"><div id="data">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div>
+
+        <td>
+          <a href="#kaaren" class="open-popup-link wrapper">
+              <img src='images/02_Kaaren_Haldeman.jpg'>
+              <div class='description'>
+                  <p class='description_content'>Kaaren Haldeman<br>Gun Safety Advocate</p>
+              </div>
+          </a>
+        </td>
+        <td>
+          <a href="#reem" class="open-popup-link wrapper">
+              <img src='images/03_Reem_Alfahad.jpg' />
+              <div class='description'>
+                  <p class='description_content'>Reem Alfahad<br>Muslim-American Student</p>
+              </div>
+          </a>
+        </td>
+        <td>
+          <a href="#chris" class="open-popup-link wrapper">
+              <img src='images/04_Christopher_Bail_PhD.jpg' />
+              <div class='description'>
+                  <p class='description_content'>Christopher Bail, PhD<br>Author of “Terrified”</p>
+              </div>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#towqir" class="open-popup-link wrapper">
+              <img src='images/05_Towqir_Aziz.jpg' />
+              <div class='description'>
+                  <p class='description_content'>Towqir Aziz<br>Muslim-American Student</p>
+              </div>
+          </a>
+        </td>
+        <td>
+          <a href="#lisa" class="open-popup-link wrapper">
+              <img src='images/06_Lisa_Sorg.jpg' />
+              <div class='description'>
+                  <p class='description_content'>Lisa Sorg<br>Editor, IndyWeek</p>
+              </div>
+          </a>
+        </td>
+        <td>
+          <a href="#brian" class="open-popup-link wrapper">
+              <img src='images/07_Brian_Worley.jpg' />
+              <div class='description'>
+                  <p class='description_content'>Brian Worley<br>Founder of local Atheist Church</p>
+              </div>
+          </a>
+        </td>
+        <td>
+          <a href="#kevin" class="open-popup-link wrapper">
+              <img src='images/08_Kevin_Dodson.jpg' />
+              <div class='description'>
+                  <p class='description_content'>Kevin Dodson<br>Concealed Carry Instructor</p>
+              </div>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#reema" class="open-popup-link wrapper">
+              <img src='images/09_Reema_Khrais.jpg' />
+              <div class='description'>
+                  <p class='description_content'>Reema Khrais<br>WUNC Reporter</p>
+              </div>
+          </a>
+        </td>
+        <td>
+          <a href="#kathleen" class="open-popup-link wrapper">
+              <img src='images/10_Kethleen_Thomas_PhD.jpg' />
+              <div class='description'>
+                  <p class='description_content'>Kathleen Thomas, Ph.D<br>Health Policy Researcher</p>
+              </div>
+          </a>
+        </td>
+        <td>
+          <a href="#jeff" class="open-popup-link wrapper">
+              <img src='images/11_Dr._Jeffrey_Swanson.jpg' />
+              <div class='description'>
+                  <p class='description_content'>Dr. Jeffrey Swanson<br>Gun Policy Researcher</p>
+              </div>
+          </a>
+        </td>
+        <td>
+          <a href="#adam" class="open-popup-link wrapper">
+              <img src='images/12_Dr._Adam_Goldstein.jpg' />
+              <div class='description'>
+                  <p class='description_content'>Dr. Adam Goldstein<br>Family Physician</p>
+              </div>
+          </a>
+        </td>
+      </tr>
+    </table>
+
+<br><br><br>
+            <img src="images/credits.png" class="headers">
+            <p class="credits">
+            Lead Producer &mdash; <a href="http://www.gabriela-arp.com/" target="_blank">Gabriela Arp</a><br>
+            Lead Editor &mdash; <a href="http://www.emilyrhyne.com/" target="_blank">Emily Rhyne</a><br>
+            Lead Web Editor &mdash; <a href="http://www.lexinamer.com/" target="_blank">Lexi Namer</a><br>
+            Art Director &mdash; <a href="http://www.raywhitehouse.com/" target="_blank">Ray Whitehouse</a><br>
+            Trailer Editor &mdash; <a href="http://www.emilyrhyne.com/" target="_blank">Emily Rhyne</a><br><br>
+
+            Producers:<br>
+            <a href="http://www.emilyrhyne.com/" target="_blank">Emily Rhyne</a><br><br>
+            <a href="http://www.andreapatino.com/" target="_blank">Andrea Patiño Contreras</a><br>
+            <a href="http://www.indaiawhitcombe.com/" target="_blank">Indaia Whitcombe</a><br>
+            <a href="http://www.raywhitehouse.com/" target="_blank">Ray Whitehouse</a><br>
+            <a href="http://www.gracefarson.com/" target="_blank">Grace Farson</a><br><br>
+
+            Editors:<br>
+            <a href="http://www.andreapatino.com/" target="_blank">Andrea Patiño Contreras</a><br>
+            <a href="http://www.indaiawhitcombe.com/" target="_blank">Indaia Whitcombe</a><br>
+            <a href="http://www.raywhitehouse.com/" target="_blank">Ray Whitehouse</a><br>
+            <a href="http://www.gabriela-arp.com/" target="_blank">Gabriela Arp</a><br>
+            <a href="http://www.gracefarson.com/" target="_blank">Grace Farson</a><br><br>
+
+            Web Design:<br>
+            <a href="http://www.morganljohnson.com/" target="_blank">Morgan Johnson</a><br>
+            <a href="http://www.gabriela-arp.com/" target="_blank">Gabriela Arp</a><br><br>
+
+            Portrait Photography:<br>
+            <a href="http://www.raywhitehouse.com/" target="_blank">Ray Whitehouse</a><br><br>
+
+            Copy Editors:<br>
+            <a href="http://www.andreapatino.com/" target="_blank">Andrea Patino</a><br>
+            <a href="http://editdesk.wordpress.com/" target="_blank">Andy Bechtel</a><br><br>
+
+            Advisors:<br>
+            <a href="http://thecoalwar.com/" target="_blank">Chad A. Stevens</a><br>
+            <a href="http://steventking.com/" target="_blank">Steven King</a><br><br>
+
+            With Support From<br><br>
+
+            UNC-Chapel Hill <a href="http://www.jomc.unc.edu/" target="_blank">School of Journalism and Mass Communication</a><br><br>
+
+            <a href="http://documentarystudies.duke.edu/" target="_blank">Center for Documentary Studies at Duke University</a></p>
+          </div>
+        </div>
+    </div>
+
+
+<!-- Bios -->
+
+    <div id="abdullah" class="white-popup mfp-hide">
+      <h3>Abdullah Antepli</h3>
+      <br>Former Duke University Imam
+      <br>Topic: Mental Health
+
+      <br><br>Imam Abdullah is the founder and executive board member of the Muslim Chaplains Association and a member of the National
+      Association of College and University Chaplains. He previously served as the Muslim chaplain at Duke University.
+      In his current work at Duke, he engages students, faculty, and staff across campus through seminars, panels, and other avenues
+      to provide a Muslim voice and perspective to the discussions of faith, spirituality, social justice, and more. He also serves
+      as a faculty member in the Divinity School and at DISC (Duke Islamic Studies Center), teaching a variety of courses on Islam.
+    </div>
+
+    <div id="kaaren" class="white-popup mfp-hide">
+      <h3>Kaaren Haldeman</h3>
+      <br>Gun Safety Activist
+      <br>Topic: Guns
+
+      <br><br>Kaaren Haldeman is the former NC chapter leader of Moms Demand Action for Gunsense in America, a nonpartisan group of American
+      mothers advocating for stronger gun laws and cultural change around firearms. She received her master's degree in public health
+      from the University of California at Berkeley and doctorate in Anthropology from UNC-Chapel Hill. She is an independent scholar
+      living in Durham with her husband and three sons.
+    </div>
+
+    <div id="reem" class="white-popup mfp-hide">
+      <h3>Reem Alfahad</h3>
+      <br>Muslim-American Student
+      <br>Topic: Religion
+      <br><br>Reem Alfahad is a Muslim American who has lived a life split between her familial home in Kuwait, and her explorative home
+      in United States. She is currently a senior at Duke University studying Public Policy, specifically, in the way that it intersects
+      with culture, identity, and the arts. Her interests in immigration and citizenship lent her to pursue a series of projects in Latin
+      America, where she hopes to return to in the near future.
+    </div>
+
+    <div id="chris" class="white-popup mfp-hide">
+      <h3>Christopher Ball</h3>
+      <br>Author of "Terrified"
+      <br>Topic: Media
+
+      <br><br>Christopher Bail is an Assistant Professor of Sociology at UNC-CH. Bail recently published “Terrified: How Anti-Muslim Fringe Organizations Became Mainstream,” which  traces how the anti-Muslim narrative of the political fringe has captivated large segments of the American media, government, and general public. He received his Ph.D. from Harvard University and has had his work published in NBC News, National Public Radio, the Huffington Post, and Salon.
+    </div>
+
+    <div id="towqir" class="white-popup mfp-hide">
+      <h3>Towqir Aziz</h3>
+      <br>Muslim-American Student
+      <br>Topic: Religion
+
+      <br><br>Towqir Aziz is a Muslim-American student studying environmental science and journalism at the UNC-CH. He is the co-director of the Triangle Multicultural Health Fair, and is highly involved in the local Muslim student organizations and community. Towqir was close friends with Deah, Yusor, and Razan.
+    </div>
+
+    <div id="lisa" class="white-popup mfp-hide">
+      <h3>Lisa Sorg</h3>
+      <br>Editor of INDY Week
+      <br>Topic: Media
+
+      <br><br>Lisa Sorg is the editor of INDY Week, an alternative newsweekly that covers Raleigh, Durham, Chapel Hill and the Triangle. An award-winning journalist, she writes about a wide range of issues including poverty, criminal justice and affordable housing. In her “spare” time, she is a documentary filmmaker and a storyteller, who performs at the Monti. Originally from Indiana, she and her husband have lived in Durham since 2006.
+    </div>
+
+    <div id="brian" class="white-popup mfp-hide">
+      <h3>Brian Worley</h3>
+      <br>Founder of local Athiest Church
+      <br>Topic: Religion
+
+      <br><br>Brian Worley moved to the Triangle in 2010 and received a Master of Arts in Teaching from NCSU. He teaches English at a low-income school in rural North Carolina. A nonbeliever for all of his adult life, he is passionate about creating a positive community that is centered around secular values. He is a founding member of Sunday Assembly Chapel Hill, a godless congregation that celebrates life.
+
+    </div>
+
+    <div id="kevin" class="white-popup mfp-hide">
+      <h3>Kevin Dodson</h3>
+      <br>Concealed Carry Instructor
+      <br>Topic: Guns
+
+      <br><br>Kevin Dodson has spent most of his life in Sanford, North Carolina and is currently employed as a patrol sergeant by the Siler City Police Department.  Kevin is also a law enforcement general instructor and firearms instructor. He started Carolina Firearms Training in March of 2009 and has taught more than 6000 students in concealed carry training courses. Kevin and his wife Lori Ann opened K&L Gun Sales in September of 2013.
+
+    </div>
+
+    <div id="reema" class="white-popup mfp-hide">
+      <h3>Reema Kharis</h3>
+      <br>Editor of INDY Week
+      <br>Topic: Media
+
+      <br><br>Lisa Sorg is the editor of INDY Week, an alternative newsweekly that covers Raleigh, Durham, Chapel Hill and the Triangle. An award-winning journalist, she writes about a wide range of issues including poverty, criminal justice and affordable housing. In her “spare” time, she is a documentary filmmaker and a storyteller, who performs at the Monti. Originally from Indiana, she and her husband have lived in Durham since 2006.
+    </div>
+
+    <div id="kathleen" class="white-popup mfp-hide">
+      <h3>Kathleen Thomas</h3>
+      <br>Health Policy Researcher
+      <br>Topic: Mental Health
+
+      <br><br>Dr. Thomas is a health economist with expertise in financing of autism and mental health services, working with families and policymakers to address patient-centered outcomes and develop meaningful insurance policy. She is a Research Fellow at the Sheps Center for Health Services Research and Adjunct Associate Professor of Health Policy and Management at the University of North Carolina at Chapel Hill.
+
+
+    </div>
+
+    <div id="jeff" class="white-popup mfp-hide">
+      <h3>Dr. Jeffrey Swanson</h3>
+      <br>Gun Policy Researcher
+      <br>Topic: Guns
+
+      <br><br>Jeffrey Swanson is Professor in Psychiatry and Behavioral Sciences at Duke University School of Medicine. He holds a PhD in sociology from Yale University. Dr. Swanson’s research is focused on building evidence for policies and laws to prevent firearm violence and to improve outcomes for adults with serious mental illness in the community. He received the 2011 Carl Taube Award from the American Public Health Association and the 2010 Eugene C. Hargrove, MD, Award from the North Carolina Psychiatric Foundation, both for outstanding career contributions to mental health research. He is currently principal investigator of a multi-state study on firearms laws, mental illness and prevention of gun violence, co-sponsored by the National Science Foundation, the Brain and Behavior Foundation, and the Robert Wood Johnson Foundation's Program on Public Health Law Research (PHLR). Dr. Swanson has served as a consultant to policymakers at the state and national levels, health care institutions, foundations, corporate research and legal firms.
+
+    </div>
+
+    <div id="adam" class="white-popup mfp-hide">
+      <h3>Adam Goldstein</h3>
+      <br>Family Physician
+      <br>Topic: Mental Health
+
+      <br><br>Dr. Adam Goldstein is a Professor of Family Medicine and Director of Departmental Advancement, at the UNC School of Medicine. As a national expert in primary care, Dr. Goldstein has a 20-year history in clinical practice, teaching, and research. He is the founder and Co-Host of YOUR HEALTH radio, a UNC Health Care weekly syndicated radio show on health and healing.
+
+    </div>
+
+
+
+
+<!-- Shooting -->
+
+<div id="container-shooting" style="display:none">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1"><br><br>
+      <img src="images/theshooting.png" class="headers">
+<br><br><br>
+      <b>CHAPEL HILL, N.C. &mdash;</b> It was 5:11 p.m. on Tuesday, February 10, when Chapel Hill police responded to multiple 911 calls reporting gunshots and screams. By the time police arrived at the Finley Forest Condominiums in Chapel Hill, three people were dead, all shot in the head. All three, Razan Mohammad Abu-Salha, Yusor Mohammad and Deah Barakat were Muslim-American students known in the community for their volunteer work. Deah and Yusor had recently married and the Razan was the bride’s younger sister. Both women wore religious headscarves. Craig Stephen Hicks, 46, turned himself in to police on Tuesday night. He was arrested and charged with three counts of first-degree murder. <br><br>
+The shooting reverberated throughout Chapel Hill, a town known for its tolerance and tranquility. No national television network mentioned the shooting on Tuesday and intense frustration over the lack of media coverage spread across the globe on social media overnight. The hashtag #chapelhillshooting became a worldwide-trend  on Twitter only hours after the shooting and was used in more than half a million tweets by Wednesday morning. Many attributed the lack of coverage to the media’s lack of interest in covering the death’s of Muslims.<br><br>
+<div class="fb-post" data-href=" https://www.facebook.com/middleeastmonitor/photos/a.10152384411436926.1073741856.152879306925/10153089082181926/?type=1&theater
+" data-width="500"></div><br><br>
+<blockquote class="twitter-tweet" lang="en"><p>I just called the mainstream media to ask where their coverage was of the <a href="https://twitter.com/hashtag/ChapelHillShooting?src=hash">#ChapelHillShooting</a> this was their response <a href="http://t.co/XqFnhPwqW2">pic.twitter.com/XqFnhPwqW2</a></p>&mdash; Chris Rock (@ozchrisrock) <a href="https://twitter.com/ozchrisrock/status/565500763678720000">February 11, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><br><br>
+The hashtag #muslimlivesmatter, an allusion to recent protests related to violence against African-Americans, also began trending on Twitter hours after the shooting. The shooter’s motive was unclear, but implicit in much of the speculation on social media was that religion was a factor in the shootings. Many, including one of Deah’s cousins,  explicitly said that the shootings were a hate crime.<br><br>
+<blockquote class="twitter-tweet" lang="en"><p>My cousin, his wife and sister in law were murdered for being muslim. Someone tell me racism/hate crimes don&#39;t exist. <a href="https://twitter.com/hashtag/MuslimLivesMatter?src=hash">#MuslimLivesMatter</a></p>&mdash; Haya Barakat (@HayaBarakat) <a href="https://twitter.com/HayaBarakat/status/565481129088937986">February 11, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br><br>
+"Based on the brutal nature of this crime, the past anti-religion statements of the alleged perpetrator, the religious attire of two of the victims and the rising anti-Muslim rhetoric in American society, we urge state and federal law enforcement authorities to quickly address speculation of a possible bias motive in this case," said Council on American–Islamic Relations National Executive Director Nihad Awad.<br><br>
+In the next 24 hours, two conflicting narratives around the shooter’s motive had emerged.<br><br>
+Chapel Hill Police Chief Chris Blue released a statement complicating the question of Hicks’ motive. While it was possible the shooting was motivated by hate, the initial investigation led police to believe that the alleged murders were related to an “ongoing neighbor dispute over parking,” Blue said. <br><br>
+Mohammad Abu-Salha, the father of both female victims, said there was “no doubt that the way they looked and the way they believed” played a role in the murder. “We know from the police that they were shot in the head, very quickly, the three of them, one bullet each, in a very small space inside in the apartment. That's execution-style. I don't know, if that is not hate, what that would be.”<br><br>
+In a press conference outside her home, Karen Hicks, Craig Hick’s wife of seven years, dismissed the idea that the shooting was motivated by hate. “This incident had nothing to do with religion or the victims’ faith, but in fact was related to the longstanding parking disputes that my husband had with the neighbors,” she said.<br><br>
+On Wednesday evening, more than 2,500 people came together to celebrate the lives of the three murdered students at the University of North Carolina at Chapel Hill. The heart of campus was packed to the brim with spillover into the nearby buildings. People sat on walls and tables and others watched from inside the student union. The mood was somber and dignified as friends and family spoke on a small stage and shared stories about Deah, Yusor and Razan. A slideshow of images played on a nearby screen. Hundreds of candles glowed during a reading from the Quran. Elected officials and religious leaders urged unity and solidarity. <br><br>
+Chapel Hill Mayor Mark Kleinschmidt said, “this community, this university, this town is a welcoming town. It’s a compassionate town. What I believe that we can hold onto, that really I think would be the greatest legacy of our three citizens that we lost, would be to remember who we are and the community that they sustained.”<br><br>
+As the vigil came to a close, family and friends gathered near the stage. Many embraces were exchanged and tears flowed. A young boy screamed “but he didn’t do anything!” as he wept on another’s shoulder.<br><br>
+It is unlikely the debate over Hicks’ motive will ever be resolved. But to argue that this heinous act stemmed solely from a parking dispute is an over-simplification. Not all parking disputes end in the murder of three people. To accept such a simple narrative is to ignore the identities of both Hicks’ and the three murdered Muslims’.
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<a id="video1" class="swipebox-video" rel="vimeo" href="https://vimeo.com/120994817" title="Media + Mental Health"></a> <!-- Media + Mental Health -->
+<a id="video2" class="swipebox-video" rel="vimeo" href="https://vimeo.com/120868036" title="Mental Health + Religion"></a> <!-- Religion + Mental Health -->
+<a id="video3" class="swipebox-video" rel="vimeo" href="https://vimeo.com/120993467" title="Media + Religion"></a> <!-- Media + Religion -->
+<a id="video4" class="swipebox-video" rel="vimeo" href="https://vimeo.com/121099910" title="Guns + Mental Health"></a> <!-- Guns + Mental Health -->
+<a id="video5" class="swipebox-video" rel="vimeo" href="https://vimeo.com/120990722" title="Media + Guns"></a> <!-- Media + Guns -->
+<a id="video6" class="swipebox-video" rel="vimeo" href="https://vimeo.com/120992217" title="Guns + Religion"></a> <!-- Guns + Religion -->
+
+<!-- load main js -->
+<script type="text/javascript" src="plugins/cube/templates/lightbox-gallery/js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="http://www.aftertheshooting.com/js/script.js"></script>
+
+
+</body>
+</html>
